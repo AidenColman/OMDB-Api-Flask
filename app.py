@@ -13,11 +13,12 @@ def index():
 
     if request.method == 'POST': 
 
+        #gets search query text from input box on webpage 
         search_query = request.form['search_query'] 
 
-        api_key = "" 
+        api_key = "fa7ea1c2" 
 
-        url = f"http://www.omdbapi.com/?s={search_query}&apikey={fa7ea1c2}" 
+        url = f"http://www.omdbapi.com/?s={search_query}&apikey={api_key}" 
 
         response = requests.get(url) 
 
