@@ -17,7 +17,7 @@ def index():
         search_query = request.form['search_query'] 
 
         api_key = "fa7ea1c2" 
-
+        #url that goes to ombd and uses parameters to search database
         url = f"http://www.omdbapi.com/?s={search_query}&apikey={api_key}" 
 
         response = requests.get(url) 
