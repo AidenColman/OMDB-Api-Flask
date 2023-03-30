@@ -20,6 +20,8 @@ def index():
         #url that goes to ombd and uses parameters to search database
         url = f"http://www.omdbapi.com/?s={search_query}&apikey={api_key}" 
 
+        #makes request to url
+        
         response = requests.get(url) 
 
         data = response.json() 
